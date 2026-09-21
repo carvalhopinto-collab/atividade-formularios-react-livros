@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import CampoTexto from './CampoTexto' 
+import Livro from "./Livro";
 
 function FormularioLivro(props) {
+    const [livros, setLivros] = useState([]);
     const [titulo, setTitulo] = useState("");
     const [autor, setAutor] = useState("");
     const [anoPublicacao, setAnoPublicacao] = useState("");
@@ -27,12 +29,12 @@ function FormularioLivro(props) {
 
 return (
     <form className='formulario-livro' onSubmit={aoEnviar}>
-        <CampoTexto label="Título" value={titulo} aoAlterar={setTitulo} />
-        <CampoTexto label="Autor" value={autor} aoAlterar={setAutor} />
-        <CampoTexto label="Data de publicação" value={anoPublicacao} aoAlterar={setAnoPublicacao} />
-        <CampoTexto label="Gênero" value={genero} aoAlterar={setGenero} />
+        <CampoTexto label="Título" value={titulo} onChange={setTitulo} />
+        <CampoTexto label="Autor" value={autor} onChange={setAutor} />
+        <CampoTexto label="Ano de publicação" value={anoPublicacao} onChange={setAnoPublicacao} />
+        <CampoTexto label="Gênero" value={genero} onChange={setGenero} />
 
-
+        <button type="submit">Cadastrar</button>
     </form>
 );
 }
