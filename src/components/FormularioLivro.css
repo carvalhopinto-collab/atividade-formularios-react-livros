@@ -1,0 +1,65 @@
+.container-formulario {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-livro h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formulario-livro button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formulario-livro button:hover {
+  background-color: #0056b3;
+}
+
+.lista-livros {
+  margin-top: 30px;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.lista-livros h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.livro-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.livro-card h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  text-align: left;
+}
+
+.livro-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
