@@ -34,7 +34,7 @@ function FormularioLivro(props) {
 
 return (
     <section className='container-formulario'>
-        <form className='formulario-livro' onSubmit="{AoEnviar}">
+        <form className='formulario-livro' onSubmit={aoEnviar}>
             <h2>Cadastro de livros</h2>
 
             <CampoTexto label="Título" name="titulo" value={titulo} onChange={setTitulo} />
@@ -43,7 +43,7 @@ return (
             <CampoTexto label="Gênero" name="genero" value={genero} onChange={setGenero} />
             {/* ⬆ renderizar labels e inputs */}
 
-            <button type='submit'></button>
+            <button type='submit'>Cadastrar</button>
         </form>
 
         <div>
